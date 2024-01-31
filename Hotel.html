@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Availability</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Availability</h1>
+    </header>
+    
+    <main>
+        <section id="search-section">
+            <h2>Check Availability</h2>
+            <form id="availability-form">
+                <label for="check-in-date">Check-in Date:</label>
+                <input type="date" id="check-in-date" required>
+
+                <label for="check-out-date">Check-out Date:</label>
+                <input type="date" id="check-out-date" required>
+
+                <button type="button" onclick="checkAvailability()">Check Availability</button>
+            </form>
+        </section>
+
+        <section id="results-section">
+            <h2>Available Rooms</h2>
+            <ul id="room-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel Availability</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
